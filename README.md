@@ -8,5 +8,6 @@ wget --no-check-certificate https://raw.githubusercontent.com/freuende/pritunl.s
 
 chmod +x ./Install_Pritunl.sh \ && ./Install_Pritunl.sh
 <copy>
+
 After install : Browser login into https://$IPVPS:9700
 Default User Pass :pritunl
