@@ -1,8 +1,6 @@
 #!/bin/bash
 
-# ©2013-14 Mark Mearns. All Rights Reserved.
-# This script is distributed under a Creative Commons ShareAlike 3.0 licence.
-# http://creativecommons.org/licenses/by-sa/3.0/
+#This script create and compile by SyedMokhtar #https://www.facebook.com/syed.mokhtardahari
 
 clear
 
@@ -137,15 +135,10 @@ refresh_pattern -i (/cgi-bin/|\?) 0    0%    0
 refresh_pattern .        0    20%    4320
 
 #control IP
-acl control_ip dst 104.238.150.62-104.238.150.62/255.255.255.255
-acl control_ip dst 103.253.25.194-103.253.25.194/255.255.255.255
-acl control_ip dst 108.61.246.225-108.61.246.225/255.255.255.255
-acl control_ip dst 108.61.247.167-108.61.247.167/255.255.255.255
-acl control_ip dst 128.199.131.166-128.199.131.166/255.255.255.255
-acl control_ip dst 128.199.165.10-128.199.165.10/255.255.255.255
-http_access allow control_ip
-# Request Headers Forcing
+#acl control_ip dst 104.238.150.62-104.238.150.62/255.255.255.255 #This will be your client ip
+#http_access allow control_ip #to allow the gatekeeper
 
+# Request Headers Forcing
 request_header_access Allow allow all
 request_header_access Authorization allow all
 request_header_access WWW-Authenticate allow all
