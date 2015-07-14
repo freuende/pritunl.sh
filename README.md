@@ -12,7 +12,11 @@ chmod +x ./Install_Pritunl.sh \ && ./Install_Pritunl.sh
 After install : Browser login into https://$IPVPS:9700
 Default User Pass :pritunl
 
+
+
+
 Install Install_Pritunl_ONLY
+
 
 wget https://raw.githubusercontent.com/freuende/pritunl.sh/master/Install_Pritunl_ONLY.sh
 
